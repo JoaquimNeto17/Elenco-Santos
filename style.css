@@ -36,7 +36,7 @@ main {
       90deg,
       black 0px,
       black 50px,
-      white 50px,
+      rgb(0, 0, 0) 50px,
       white 100px
   );
   background-size: cover;
