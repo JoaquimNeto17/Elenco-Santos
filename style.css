@@ -34,14 +34,42 @@ main {
   gap: 15px;
   background: repeating-linear-gradient(
       90deg,
-      black 0px,
-      black 50px,
+      rgb(0, 0, 0) 0px,
+      rgb(255, 255, 255) 50px,
       rgb(0, 0, 0) 50px,
-      white 100px
+      rgb(0, 0, 0) 100px
   );
   background-size: cover;
   background-blend-mode: overlay;
 }
+
+.btn-info {
+  display: inline-block;
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 15px;
+}
+
+.btn-info:hover {
+  background-color: #6a6a6a; /* Tom mais escuro ao passar o mouse */
+  transform: scale(1.05);
+}
+
+.btn-info:active {
+  background-color: #000000; /* Cor ao clicar */
+  transform: scale(0.98);
+}
+
 
 .card {
   width: 300px;
@@ -60,8 +88,13 @@ main {
 }
 
 .card h2, .card p {
-  margin: 15px 0;
+  margin: 0px 0;
   color: white;
+}
+
+p, h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .card img {
